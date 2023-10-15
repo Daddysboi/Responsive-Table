@@ -1,0 +1,140 @@
+html {color-scheme: dark;}
+
+body{
+  color: #eee;
+  font-family: system-ui;
+  
+}
+
+.wrapper{
+  width: min(900px, 100% -3rem);
+  margin-inline: auto;
+}
+
+h1{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+table {
+  background: #323232;
+  border-collapse: collapse;
+  width: 100%;
+   overflow-x: auto;
+    padding: 20px;
+}
+
+
+th, td, caption {
+  padding: 1rem;
+}
+
+caption, th {
+  text-align: center;
+}
+
+caption {
+  background: hsl(0 0% 0%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+th{
+  background: hsl(0 0% 0% / 0.5);
+}
+
+tr:nth-of-type(2n) {
+  background: hsl(0 0% 0% / 0.2);
+}
+
+/* 
+@media (max-width: 650px) {
+  th{
+    display: none;
+  }
+  td{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 10ch auto;
+    padding: 0.5rem;
+  }
+
+  td:first-child{
+    padding-top: 1rem;
+  }
+
+  td:last-child{
+    padding-top: 1rem;
+  }
+  td::before{
+    content: attr(data-cell) ":";
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+}  */
+
+.responsive-table th, .responsive-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+@media (max-width: 480px) {
+    .responsive-table {
+        font-size: 10px;
+    }
+    .header{
+      font-size: 2rem;
+    }
+    .table-caption {
+      font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .responsive-table {
+        font-size: 9px;
+    }
+    .header{
+      font-size: 1.5rem;
+    }
+    .table-caption {
+      font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .responsive-table {
+        font-size: 8px;
+    }
+    .header{
+      font-size: 1.2rem;
+    }
+    .table-caption {
+      font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .responsive-table {
+        font-size: 7px;
+    }
+    .header{
+      font-size: 1.2rem;
+    }
+    .table-caption {
+      font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 240px) {
+    .responsive-table {
+        font-size: 6px;
+    }
+    .header{
+      font-size: 1rem;
+    }
+    .table-caption {
+      font-size: 0.5rem;
+    }
+}
